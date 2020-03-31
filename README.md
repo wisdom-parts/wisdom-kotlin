@@ -96,17 +96,17 @@ A face can be represented by any Kotlin data type. By convention, a polymorphic 
 An imp is simply a value of the face type.
 
 In simple cases, a charter is simply an instance of the face data type. For example, 42 is a valid charter for 
-an `Int` face. By convention, a charter for a polymorphic face is itself polymorphic, and is also represented by a 
-protocol that is usable as an existential type.
+an `Int` face. By convention, a charter for a polymorphic face is itself polymorphic, and is also represented by 
+an interface.
 
 The code that constructs an imp must know how to instantiate it from a charter. For non-polymorphic imps, 
-this can be hardcoded and specific to the imp and charter types. By convention, the protocol that represents
+this can be hardcoded and specific to the imp and charter types. By convention, the interface that represents
 the charter for a polymorphic face provides a method for constructing an imp.
 
-These representations generally adhere to the following conventions.  `nil` represents an unspecified imp. Therefore, 
-roles are represented in charters as optional values. The Wisdom framework provides machinery for converting a 
-partially specified charter into a complete one. To move the burden of role optionality entirely into the framework, 
-charter roles are represented by implicitly unwrapped optionals. 
+These representations generally adhere to the following conventions.  `null` represents an unspecified imp.
+Therefore, roles are represented in charters as optional values. The Wisdom framework provides machinery for converting 
+a partially specified charter into a complete one. To move the burden of role optionality entirely into the framework, 
+charter roles are represented by `lazyinit` nullables. 
 
 # Important Wise Idioms and Operations
 
