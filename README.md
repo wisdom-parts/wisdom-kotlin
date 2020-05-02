@@ -79,7 +79,7 @@ The face of the clan's root imp is also considered to be the face of the clan.
 A clan's face can be as simple as `Int`, in which case the clan is as simple
 as a single integer value. This single-node base case forms the leaves of a clan.
 
-Each imp declares a set of subordinate "roles" (possible an empty set) to
+Each imp declares a set of subordinate "roles" (possibly an empty set) to
 which the imp delegates. The imp declares a face for each role.
 To form a complete, operational clan, each role must be filled
 by a subordinate clan with that face. These subordinate clans are called "septs".
@@ -92,21 +92,21 @@ to construct a clan must be complete.
 
 ## Wise Programming in Kotlin
 
-A face can be represented by any Kotlin data type. By convention, a polymorphic face is represented as an interface.
+A face can be represented by any Kotlin data type. By convention, a polymorphic face is represented by 
+a subclass of `Mix` (as defined in [Joy Data](https://github.com/joy-prime/joy-data-kotlin)). 
 An imp is simply a value of the face type.
 
 In simple cases, a charter is simply an instance of the face data type. For example, 42 is a valid charter for 
-an `Int` face. By convention, a charter for a polymorphic face is itself polymorphic, and is also represented by 
-an interface.
+an `Int` face. By convention, a charter for a polymorphic face is represented by a subclass of `Remix`.
 
 The code that constructs an imp must know how to instantiate it from a charter. For non-polymorphic imps, 
 this can be hardcoded and specific to the imp and charter types. By convention, the interface that represents
-the charter for a polymorphic face provides a method for constructing an imp.
+the charter for a polymorphic face provides a method for constructing an imp. `Remix` provides an open function
+that follows this convention: `me.joypri.PersonR#toMix`.
 
-These representations generally adhere to the following conventions.  `null` represents an unspecified imp.
-Therefore, roles are represented in charters as optional values. The Wisdom framework provides machinery for converting 
-a partially specified charter into a complete one. To move the burden of role optionality entirely into the framework, 
-charter roles are represented by `lazyinit` nullables. 
+By convention, `null` represents an unspecified imp. Therefore, roles are represented in charters as optional values. 
+The Wisdom framework provides machinery for converting a partially specified charter into a completely 
+specified one.
 
 # Important Wise Idioms and Operations
 
