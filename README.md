@@ -108,20 +108,9 @@ By convention, `null` represents an unspecified imp. Therefore, roles are repres
 The Wisdom framework provides machinery for converting a partially specified charter into a completely 
 specified one.
 
-# Important Wise Idioms and Operations
+# Motivation and a proposed Reasoning layer
 
-## Constructing a Wise Component in Code
-
-## Constructing a Wise Component in a UI
-
-## Constructing a Wise Component through Machine Learning
-
-## Textual Representation of a Wise Component
-
-## Creating a Random Wise Component of a Given Type
-
-## Randomly Mutating a Wise Component
-
-## Mating Two Wise Components
-
+[This Google Doc](https://docs.google.com/document/d/1vouA9qZjAZxhFV8VbtkCZytrkFw_83D00P7rU9xRVes) 
+explains some of the motivations behind Wisdom. It also proposes a new top layer, “reasoning”, to support 
+multi-step AI problem solving.
 
