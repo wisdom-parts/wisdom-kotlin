@@ -37,7 +37,7 @@ excessive resource utilization, or data structure corruption.
 The programmer's goal is to make the overall space of behaviors dense in useful
 solutions for a particular problem domain. This allows a future programmer, non-programmer, or
 machine learning algorithm to construct a specific wise component hierarchy that solves a problem
-at hand. Wisdom can be seen as a style of defining DSLs that are more declarative than most.
+at hand. Wisdom can be seen as a style of defining DSLs.
 
 On average, changing values at higher levels of the hierarchy that forms a wise component 
 must have more impact on the practical behavior of that component than changes deeper in the hierarchy.
@@ -64,7 +64,7 @@ the resulting difference in capability is profound.
 ## Wise Programming Terminology
 
 We use strange-sounding terminology for wise programming to support its 
-fundamentally new programming style with fresh metaphors, and to give ouselves new
+fundamentally new programming style with fresh metaphors, and to give ourselves new
 terms that don't already carry freight in the software domain.
 
 Each node in a wise component's value hierarchy is called an "imp". 
