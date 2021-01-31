@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class IntExprTest {
+class PartsTest {
 
     private val two = Const(C of 2)
     private val three = Const(C of 3)
