@@ -1,13 +1,13 @@
 package parts.wisdom.examples.intexpr
 
-import me.joypri.Mix
-import me.joypri.Part
-import me.joypri.Role
+import me.joypri.*
 
-object C : Role<Int>()
+object C : IntRole()
 
-object X : Role<IntExpr>()
-object Y : Role<IntExpr>()
+open class IntExprRole : ClassRole<IntExpr>(IntExpr::class)
+
+object X : IntExprRole()
+object Y : IntExprRole()
 
 open class IntExpr(vararg parts: Part) : Mix(*parts) {
     open fun eval(): Int = 0
