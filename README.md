@@ -108,9 +108,8 @@ By convention, `null` represents an unspecified imp. Therefore, roles are repres
 The Wisdom framework provides machinery for converting a partially specified charter into a completely 
 specified one.
 
-# Motivation and a proposed Reasoning layer
+## Additional Design Documentation
 
-[This Google Doc](https://docs.google.com/document/d/1vouA9qZjAZxhFV8VbtkCZytrkFw_83D00P7rU9xRVes) 
-explains some of the motivations behind Wisdom. It also proposes a new top layer, “reasoning”, to support 
-multi-step AI problem solving.
+[Wisdom MCTS Reasoning Layer](https://docs.google.com/document/d/1RRmyFhciqFDbD3sWwARDzK3r1R3sErYUDMJlc1ca8MI)
 
+[Wisdom Motivation and Goals](https://docs.google.com/document/d/1vouA9qZjAZxhFV8VbtkCZytrkFw_83D00P7rU9xRVes)
