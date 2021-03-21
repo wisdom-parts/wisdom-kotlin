@@ -92,9 +92,9 @@ to construct a clan must be complete.
 
 ## Wise Programming in Kotlin
 
-A face can be represented by any Kotlin data type. By convention, a polymorphic face is represented by 
-a subclass of `Mix` (as defined in [Joy Data](https://github.com/joy-prime/joy-data-kotlin)). 
-An imp is simply a value of the face type.
+A face can be represented by any Kotlin data type. An imp is simply a value of the face type.
+By convention, a polymorphic face is represented by  a subclass of `Mix` 
+(as defined in [Joy Data](https://github.com/joy-prime/joy-data-kotlin)). 
 
 In simple cases, a charter is simply an instance of the face data type. For example, 42 is a valid charter for 
 an `Int` face. By convention, a charter for a polymorphic face is represented by a subclass of `Remix`.
