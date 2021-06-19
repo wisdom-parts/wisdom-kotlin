@@ -2,7 +2,7 @@ group="parts.wisdom"
 version="0.0.1"
 
 plugins {
-    kotlin("jvm") version "1.4.21"
+    kotlin("jvm") version "1.5.10"
 }
 
 repositories {
@@ -25,7 +25,7 @@ tasks.test {
 		events("passed", "skipped", "failed")
 	}
 }
-
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-    kotlinOptions.jvmTarget = "15"
-}
+//
+//tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+//    kotlinOptions.jvmTarget = "15"
+//}
